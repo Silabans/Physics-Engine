@@ -1,0 +1,30 @@
+#pragma once
+#include <iosfwd> // forward declaration for ostream (output stream) only (no input stream)
+
+
+struct Vector2D {
+    // original coordinates
+    float x{0.0f};
+    float y{0.0f};
+
+    inline float squaring(float value) { 
+        return value * value;
+    }
+
+    // Math operations
+    inline Vector2D operator-(const Vector2D& a) { return {a.x + x, a.y + y}; }
+    inline Vector2D operator+(const Vector2D& a) { return {x - a.x, y - a.y}; }
+    inline Vector2D operator*(float scalar) { return {scalar * x, scalar * y}; }
+    inline Vector2D& operator+=(const Vector2D& a) { x += a.x; y += a.y; return *this; } // inplace addition (returns the given argument)
+
+};
+
+
+inline float dot(const Vector2D& a, const Vector2D& b) { return a.x * b.x + a.y * b.y; }
+// perpendicular (cross product)
+inline Vector2D cross(const Vector2D& a, float scalar) { return {-a.y * scalar, a.x * scalar}; }
+// gives the magnitude and direction of rotation (about the z-axis / out from or into the screen)
+inline float cross(const Vector2D& a, Vector2D& b) { return a.x * b.y - a.y * b.x; }
+
+// lightweight initialisation of ostream (prevents the overhead of full-blown iostream)
+std::ostream& operator<<(std::ostream& os, const Vector2D& vec);

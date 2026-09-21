@@ -4,23 +4,6 @@
 #include <array>
 #include <optional>
 
-struct Vector2D { float x; float y; };
-
-inline float squaring(float value) { 
-    return value * value;
-}
-
-// Math operations
-inline Vector2D operator-(const Vector2D& a, const Vector2D& b) { return {a.x - b.x, a.y - b.y}; }
-inline Vector2D operator+(const Vector2D& a, const Vector2D& b) { return {a.x + b.x, a.y + b.y}; }
-inline Vector2D operator*(const Vector2D& a, const Vector2D& b) { return {a.x * b.x, a.y * b.y}; }
-inline Vector2D operator*(const Vector2D& a, const float scalar) { return {a.x * scalar, a.y * scalar}; }
-inline float dot(const Vector2D& a, const Vector2D& b) { return a.x * b.x + a.y * b.y; }
-// perpendicular (cross product)
-inline Vector2D cross(const Vector2D& a, float scalar) { return {-a.y * scalar, a.x * scalar}; }
-// gives the magnitude and direction of rotation (about the z-axis / out from or into the screen)
-inline float cross(const Vector2D& a, Vector2D& b) { return a.x * b.y - a.y * b.x; }
-
 
 // Rigid Body calculations
 enum class ShapeType { CIRCLE, BOX };
