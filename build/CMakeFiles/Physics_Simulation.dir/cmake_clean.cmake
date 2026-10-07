@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj"
+  "CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj.d"
+  "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj"
+  "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj.d"
   "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj"
   "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj.d"
   "Physics_Simulation.exe"

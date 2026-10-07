@@ -3,15 +3,14 @@
 #include <algorithm>
 
 
-Vector2D calculate_vrel(const RigidBody& a, const RigidBody& b) {
+inline Vector2D calculate_vrel(const RigidBody& a, const RigidBody& b) {
     Vector2D va = a.getVelocity();
     Vector2D vb = b.getVelocity();
 
     return va - vb;
 }
 
-
-void resolve_circle_collision(RigidBody& a, RigidBody& b) {
+inline void resolve_circle_collision(RigidBody& a, RigidBody& b) {
     const Circle* circleA = static_cast<const Circle*>(a.getShape());
     const Circle* circleB = static_cast<const Circle*>(b.getShape());
 
@@ -66,8 +65,7 @@ void resolve_circle_collision(RigidBody& a, RigidBody& b) {
     b.setPosition(b.getPosition() - correction * b.getInverseMass());
 }
 
-
-void resolve_box_collision(RigidBody& a, RigidBody& b, SATresult sat) {
+inline void resolve_box_collision(RigidBody& a, RigidBody& b, SATresult sat) {
     if (!sat.collision) return;
 
     // cast the shape (box) into actual box instances
@@ -159,8 +157,7 @@ void resolve_box_collision(RigidBody& a, RigidBody& b, SATresult sat) {
 
 }
 
-
-void resolve_box_circle_collision(RigidBody& a, RigidBody& b) {
+inline void resolve_box_circle_collision(RigidBody& a, RigidBody& b) {
     const Box* box = static_cast<const Box*>(a.getShape());
     const Circle* circle = static_cast<const Circle*>(b.getShape());
 
@@ -246,8 +243,7 @@ void resolve_box_circle_collision(RigidBody& a, RigidBody& b) {
     }
 }
 
-
-void resolve_all_collisions(std::vector<std::unique_ptr<RigidBody>>& bodies) {
+inline void resolve_all_collisions(std::vector<std::shared_ptr<RigidBody>>& bodies) {
     int count = bodies.size();
 
     for (int i = 0; i < count; ++i) {
@@ -281,7 +277,7 @@ void resolve_all_collisions(std::vector<std::unique_ptr<RigidBody>>& bodies) {
 }
 
 // non-contact forces
-void update_noncollision(RigidBody& body) {
+inline void update_noncollision(RigidBody& body) {
     if (body.getInverseMass() == 0.0f) return;
 
     float fg = 900.0f * body.getMass();
@@ -297,9 +293,8 @@ void update_noncollision(RigidBody& body) {
     //body.add_forces({fx, fy});
 }
 
-
 // no longer in use
-void resolve_boundaries(RigidBody& body) {
+inline void resolve_boundaries(RigidBody& body) {
     if (body.getInverseMass() == 0.0f) return;
 
     // boundary collisions

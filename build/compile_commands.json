@@ -1,6 +1,18 @@
 [
 {
   "directory": "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/build",
+  "command": "C:\\Users\\USER\\mingw64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles\\Physics_Simulation.dir\\includes_CXX.rsp -g -std=c++20 -o CMakeFiles\\Physics_Simulation.dir\\Source\\engine\\PhysicsWorld.cpp.obj -c \"C:\\Users\\USER\\Documents\\Coding Projects\\Self-initiated\\C++\\Physics_Simulation\\Source\\engine\\PhysicsWorld.cpp\"",
+  "file": "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/PhysicsWorld.cpp",
+  "output": "CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj"
+},
+{
+  "directory": "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/build",
+  "command": "C:\\Users\\USER\\mingw64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles\\Physics_Simulation.dir\\includes_CXX.rsp -g -std=c++20 -o CMakeFiles\\Physics_Simulation.dir\\Source\\game\\main.cpp.obj -c \"C:\\Users\\USER\\Documents\\Coding Projects\\Self-initiated\\C++\\Physics_Simulation\\Source\\game\\main.cpp\"",
+  "file": "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/main.cpp",
+  "output": "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/build",
   "command": "C:\\Users\\USER\\mingw64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles\\Physics_Simulation.dir\\includes_CXX.rsp -g -std=c++20 -o CMakeFiles\\Physics_Simulation.dir\\Source\\main.cpp.obj -c \"C:\\Users\\USER\\Documents\\Coding Projects\\Self-initiated\\C++\\Physics_Simulation\\Source\\main.cpp\"",
   "file": "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/main.cpp",
   "output": "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj"

@@ -15,6 +15,8 @@
 			"expression" : "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/*.cpp",
 			"paths" : 
 			[
+				"C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/PhysicsWorld.cpp",
+				"C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/main.cpp",
 				"C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/main.cpp"
 			],
 			"recurse" : true

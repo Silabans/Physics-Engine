@@ -54,6 +54,8 @@ endif()
 # SOURCE_FILES at CMakeLists.txt:85 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/*.cpp")
 set(OLD_GLOB
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/PhysicsWorld.cpp"
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/main.cpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

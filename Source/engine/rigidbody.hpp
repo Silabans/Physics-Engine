@@ -3,6 +3,7 @@
 #include <cmath>
 #include <array>
 #include <optional>
+#include "Vector2D.hpp"
 
 
 // Rigid Body calculations

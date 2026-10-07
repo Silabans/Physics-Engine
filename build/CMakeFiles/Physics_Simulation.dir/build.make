@@ -71,11 +71,41 @@ include CMakeFiles/Physics_Simulation.dir/flags.make
 CMakeFiles/Physics_Simulation.dir/codegen:
 .PHONY : CMakeFiles/Physics_Simulation.dir/codegen
 
+CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj: CMakeFiles/Physics_Simulation.dir/flags.make
+CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj: CMakeFiles/Physics_Simulation.dir/includes_CXX.rsp
+CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj: C:/Users/USER/Documents/Coding\ Projects/Self-initiated/C++/Physics_Simulation/Source/engine/PhysicsWorld.cpp
+CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj: CMakeFiles/Physics_Simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj"
+	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj -MF CMakeFiles\Physics_Simulation.dir\Source\engine\PhysicsWorld.cpp.obj.d -o CMakeFiles\Physics_Simulation.dir\Source\engine\PhysicsWorld.cpp.obj -c "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\engine\PhysicsWorld.cpp"
+
+CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.i"
+	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\engine\PhysicsWorld.cpp" > CMakeFiles\Physics_Simulation.dir\Source\engine\PhysicsWorld.cpp.i
+
+CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.s"
+	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\engine\PhysicsWorld.cpp" -o CMakeFiles\Physics_Simulation.dir\Source\engine\PhysicsWorld.cpp.s
+
+CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj: CMakeFiles/Physics_Simulation.dir/flags.make
+CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj: CMakeFiles/Physics_Simulation.dir/includes_CXX.rsp
+CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj: C:/Users/USER/Documents/Coding\ Projects/Self-initiated/C++/Physics_Simulation/Source/game/main.cpp
+CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj: CMakeFiles/Physics_Simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj"
+	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj -MF CMakeFiles\Physics_Simulation.dir\Source\game\main.cpp.obj.d -o CMakeFiles\Physics_Simulation.dir\Source\game\main.cpp.obj -c "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\game\main.cpp"
+
+CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.i"
+	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\game\main.cpp" > CMakeFiles\Physics_Simulation.dir\Source\game\main.cpp.i
+
+CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.s"
+	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\game\main.cpp" -o CMakeFiles\Physics_Simulation.dir\Source\game\main.cpp.s
+
 CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj: CMakeFiles/Physics_Simulation.dir/flags.make
 CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj: CMakeFiles/Physics_Simulation.dir/includes_CXX.rsp
 CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj: C:/Users/USER/Documents/Coding\ Projects/Self-initiated/C++/Physics_Simulation/Source/main.cpp
 CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj: CMakeFiles/Physics_Simulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj"
 	C:\Users\USER\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj -MF CMakeFiles\Physics_Simulation.dir\Source\main.cpp.obj.d -o CMakeFiles\Physics_Simulation.dir\Source\main.cpp.obj -c "C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\Source\main.cpp"
 
 CMakeFiles/Physics_Simulation.dir/Source/main.cpp.i: cmake_force
@@ -88,18 +118,22 @@ CMakeFiles/Physics_Simulation.dir/Source/main.cpp.s: cmake_force
 
 # Object files for target Physics_Simulation
 Physics_Simulation_OBJECTS = \
+"CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj" \
+"CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj" \
 "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj"
 
 # External object files for target Physics_Simulation
 Physics_Simulation_EXTERNAL_OBJECTS =
 
+Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj
+Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj
 Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj
 Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/build.make
 Physics_Simulation.exe: _deps/raylib-build/raylib/libraylib.a
 Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/linkLibs.rsp
 Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/objects1.rsp
 Physics_Simulation.exe: CMakeFiles/Physics_Simulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Physics_Simulation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\USER\Documents\Coding Projects\Self-initiated\C++\Physics_Simulation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Physics_Simulation.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Physics_Simulation.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying Assets folder..."
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Assets" "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/build/Assets"

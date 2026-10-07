@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/PhysicsWorld.cpp" "CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj" "gcc" "CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj.d"
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/main.cpp" "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj" "gcc" "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj.d"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/main.cpp" "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj" "gcc" "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj.d"
   )
 

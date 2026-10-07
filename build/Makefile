@@ -233,6 +233,54 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings.dir\build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
+Source/engine/PhysicsWorld.obj: Source/engine/PhysicsWorld.cpp.obj
+.PHONY : Source/engine/PhysicsWorld.obj
+
+# target to build an object file
+Source/engine/PhysicsWorld.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.obj
+.PHONY : Source/engine/PhysicsWorld.cpp.obj
+
+Source/engine/PhysicsWorld.i: Source/engine/PhysicsWorld.cpp.i
+.PHONY : Source/engine/PhysicsWorld.i
+
+# target to preprocess a source file
+Source/engine/PhysicsWorld.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.i
+.PHONY : Source/engine/PhysicsWorld.cpp.i
+
+Source/engine/PhysicsWorld.s: Source/engine/PhysicsWorld.cpp.s
+.PHONY : Source/engine/PhysicsWorld.s
+
+# target to generate assembly for a file
+Source/engine/PhysicsWorld.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.s
+.PHONY : Source/engine/PhysicsWorld.cpp.s
+
+Source/game/main.obj: Source/game/main.cpp.obj
+.PHONY : Source/game/main.obj
+
+# target to build an object file
+Source/game/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj
+.PHONY : Source/game/main.cpp.obj
+
+Source/game/main.i: Source/game/main.cpp.i
+.PHONY : Source/game/main.i
+
+# target to preprocess a source file
+Source/game/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.i
+.PHONY : Source/game/main.cpp.i
+
+Source/game/main.s: Source/game/main.cpp.s
+.PHONY : Source/game/main.s
+
+# target to generate assembly for a file
+Source/game/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.s
+.PHONY : Source/game/main.cpp.s
+
 Source/main.obj: Source/main.cpp.obj
 .PHONY : Source/main.obj
 
@@ -275,6 +323,12 @@ help:
 	@echo ... Physics_Simulation
 	@echo ... glfw
 	@echo ... raylib
+	@echo ... Source/engine/PhysicsWorld.obj
+	@echo ... Source/engine/PhysicsWorld.i
+	@echo ... Source/engine/PhysicsWorld.s
+	@echo ... Source/game/main.obj
+	@echo ... Source/game/main.i
+	@echo ... Source/game/main.s
 	@echo ... Source/main.obj
 	@echo ... Source/main.i
 	@echo ... Source/main.s
