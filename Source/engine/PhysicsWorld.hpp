@@ -29,4 +29,5 @@ public:
 
     // Read-only access for the renderer or other game logic loops
     const std::vector<std::shared_ptr<RigidBody>>& GetBodies() const { return m_bodies; }
+    const Vector2D GetGravity() const { return m_gravity; }
 };

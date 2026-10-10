@@ -1,49 +1,8 @@
 #pragma once
-#include <random>
-#include "raylib.h"
 #include <vector>
 #include <algorithm>
 #include <thread>
-#include "forces.hpp"
 #include "rigidbody.hpp"
-
-
-Color colors[7] = {RED, BLUE, YELLOW, GREEN, WHITE, PURPLE, ORANGE};
-
-// reusable random device seeding
-std::mt19937& random_engine() {
-    // initialised once in the first function call (static var)
-    static std::random_device rd;
-    static std::mt19937 gen(rd());
-    return gen;
-}
-
-
-std::unique_ptr<RigidBody> create_circle(float x, float y) {
-    std::uniform_int_distribution<std::size_t> distrib(0, 6);
-    Color color = colors[distrib(random_engine())];
-
-    float radius = 15.0f + static_cast<float>(rand() % 20); // radius from 15 to 45 pixels
-    float mass = PI * (radius*radius) * 0.02f; // mass proportional to size
-
-    auto circle = std::make_unique<Circle>(radius);
-
-    return std::make_unique<RigidBody>(x, y, mass, std::move(circle), color);
-}
-
-
-std::unique_ptr<RigidBody> create_box(float x, float y) {
-    std::uniform_int_distribution<std::size_t> distrib(0, 6);
-    Color color = colors[distrib(random_engine())];
-
-    float side_len = 30.0f + static_cast<float>(rand() % 30);
-
-    float mass = (side_len*side_len) * 0.02f; // mass proportional to size
-
-    auto box = std::make_unique<Box>(side_len, side_len, 0.0f);
-
-    return std::make_unique<RigidBody>(x, y, mass, std::move(box), color);
-}
 
 
 void apply_mouse_spring_force(RigidBody& body, Vector2D mouse_delta) {

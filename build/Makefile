@@ -233,6 +233,30 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings.dir\build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
+Source/engine/Collision.obj: Source/engine/Collision.cpp.obj
+.PHONY : Source/engine/Collision.obj
+
+# target to build an object file
+Source/engine/Collision.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/Collision.cpp.obj
+.PHONY : Source/engine/Collision.cpp.obj
+
+Source/engine/Collision.i: Source/engine/Collision.cpp.i
+.PHONY : Source/engine/Collision.i
+
+# target to preprocess a source file
+Source/engine/Collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/Collision.cpp.i
+.PHONY : Source/engine/Collision.cpp.i
+
+Source/engine/Collision.s: Source/engine/Collision.cpp.s
+.PHONY : Source/engine/Collision.s
+
+# target to generate assembly for a file
+Source/engine/Collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/Collision.cpp.s
+.PHONY : Source/engine/Collision.cpp.s
+
 Source/engine/PhysicsWorld.obj: Source/engine/PhysicsWorld.cpp.obj
 .PHONY : Source/engine/PhysicsWorld.obj
 
@@ -256,6 +280,54 @@ Source/engine/PhysicsWorld.s: Source/engine/PhysicsWorld.cpp.s
 Source/engine/PhysicsWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/PhysicsWorld.cpp.s
 .PHONY : Source/engine/PhysicsWorld.cpp.s
+
+Source/engine/QuadTree.obj: Source/engine/QuadTree.cpp.obj
+.PHONY : Source/engine/QuadTree.obj
+
+# target to build an object file
+Source/engine/QuadTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/QuadTree.cpp.obj
+.PHONY : Source/engine/QuadTree.cpp.obj
+
+Source/engine/QuadTree.i: Source/engine/QuadTree.cpp.i
+.PHONY : Source/engine/QuadTree.i
+
+# target to preprocess a source file
+Source/engine/QuadTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/QuadTree.cpp.i
+.PHONY : Source/engine/QuadTree.cpp.i
+
+Source/engine/QuadTree.s: Source/engine/QuadTree.cpp.s
+.PHONY : Source/engine/QuadTree.s
+
+# target to generate assembly for a file
+Source/engine/QuadTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/engine/QuadTree.cpp.s
+.PHONY : Source/engine/QuadTree.cpp.s
+
+Source/game/Slingshot.obj: Source/game/Slingshot.cpp.obj
+.PHONY : Source/game/Slingshot.obj
+
+# target to build an object file
+Source/game/Slingshot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/Slingshot.cpp.obj
+.PHONY : Source/game/Slingshot.cpp.obj
+
+Source/game/Slingshot.i: Source/game/Slingshot.cpp.i
+.PHONY : Source/game/Slingshot.i
+
+# target to preprocess a source file
+Source/game/Slingshot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/Slingshot.cpp.i
+.PHONY : Source/game/Slingshot.cpp.i
+
+Source/game/Slingshot.s: Source/game/Slingshot.cpp.s
+.PHONY : Source/game/Slingshot.s
+
+# target to generate assembly for a file
+Source/game/Slingshot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/Slingshot.cpp.s
+.PHONY : Source/game/Slingshot.cpp.s
 
 Source/game/main.obj: Source/game/main.cpp.obj
 .PHONY : Source/game/main.obj
@@ -323,9 +395,18 @@ help:
 	@echo ... Physics_Simulation
 	@echo ... glfw
 	@echo ... raylib
+	@echo ... Source/engine/Collision.obj
+	@echo ... Source/engine/Collision.i
+	@echo ... Source/engine/Collision.s
 	@echo ... Source/engine/PhysicsWorld.obj
 	@echo ... Source/engine/PhysicsWorld.i
 	@echo ... Source/engine/PhysicsWorld.s
+	@echo ... Source/engine/QuadTree.obj
+	@echo ... Source/engine/QuadTree.i
+	@echo ... Source/engine/QuadTree.s
+	@echo ... Source/game/Slingshot.obj
+	@echo ... Source/game/Slingshot.i
+	@echo ... Source/game/Slingshot.s
 	@echo ... Source/game/main.obj
 	@echo ... Source/game/main.i
 	@echo ... Source/game/main.s

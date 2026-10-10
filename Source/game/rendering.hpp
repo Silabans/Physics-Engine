@@ -1,5 +1,17 @@
 #pragma once
-#include "tools.hpp"
+#include "raylib.h"
+#include "PhysicsWorld.hpp"
+#include <random>
+
+Color colors[7] = {RED, BLUE, YELLOW, GREEN, WHITE, PURPLE, ORANGE};
+
+// reusable random device seeding
+std::mt19937& random_engine() {
+    // initialised once in the first function call (static var)
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    return gen;
+}
 
 
 void render(std::vector<std::unique_ptr<RigidBody>>& bodies) {
@@ -34,6 +46,8 @@ void render(std::vector<std::unique_ptr<RigidBody>>& bodies) {
                 );
             }
         }
+        slingshot.
         DrawFPS(10, 10);
+
     EndDrawing();
 }

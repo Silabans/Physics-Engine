@@ -87,8 +87,8 @@ file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS
 )
 
 file(GLOB_RECURSE HEADER_FILES CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/Include/*.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Include/*.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source/*.hpp"
 )
 
 # Create the executable target
@@ -97,8 +97,11 @@ add_executable(${PROJECT_NAME_SAFE}
     ${HEADER_FILES}
 )
 
+# Tell CMake to include the root Source directory and all its subfolders (engine, game)
 target_include_directories(${PROJECT_NAME_SAFE} PRIVATE
-    "${CMAKE_CURRENT_SOURCE_DIR}/Include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source/engine"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source/game"
 )
 
 # Link raylib to the project
@@ -120,7 +123,7 @@ if(EMSCRIPTEN)
     set(PLATFORM "Web" CACHE STRING "Raylib platform")
     
     # Force CMake to generate the .html launcher file alongside .js and .wasm
-    set_target_properties(Physics_Simulation PROPERTIES 
+    set_target_properties(${PROJECT_NAME_SAFE} PROPERTIES 
         SUFFIX ".html"
         LINK_FLAGS "-s USE_GLFW=3 -s ASYNCIFY -s ALLOW_MEMORY_GROWTH=1"
     )

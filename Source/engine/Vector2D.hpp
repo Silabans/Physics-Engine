@@ -1,13 +1,13 @@
 #pragma once
 #include <iosfwd> // forward declaration for ostream (output stream) only (no input stream)
-
+#include <cmath>
 
 struct Vector2D {
     // original coordinates
     float x{0.0f};
     float y{0.0f};
 
-    inline float squaring(float value) { 
+    static inline float squaring(float value) { 
         return value * value;
     }
 
@@ -22,6 +22,10 @@ struct Vector2D {
 };
 
 
+inline Vector2D normalized(Vector2D a) {
+    float dist = std::sqrt(a.x * a.x + a.y * a.y);
+    return a / dist;
+}
 inline float dot(const Vector2D& a, const Vector2D& b) { return a.x * b.x + a.y * b.y; }
 // perpendicular (cross product)
 inline Vector2D cross(const Vector2D& a, float scalar) { return {-a.y * scalar, a.x * scalar}; }
@@ -31,5 +35,5 @@ inline float cross(const Vector2D& a, const Vector2D& b) { return a.x * b.y - a.
 
 // lightweight initialisation of ostream (prevents the overhead of full-blown iostream)
 inline std::ostream& operator<<(std::ostream& os, const Vector2D& vec) {
-    return os << '(' << vec.x << ', ' << vec.y << ')'; 
+    return os << '(' << vec.x << ", " << vec.y << ')'; 
 };

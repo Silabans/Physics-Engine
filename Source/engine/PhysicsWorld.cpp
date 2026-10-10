@@ -1,5 +1,6 @@
 #include "PhysicsWorld.hpp"
 #include "Collision.hpp"
+#include "QuadTree.hpp"
 
 PhysicsWorld::PhysicsWorld(Vector2D gravity) : m_gravity(gravity) {}
 
@@ -28,8 +29,31 @@ void PhysicsWorld::Step(float dt, int fps) {
         }
     }
 
-    for (int i = 0; i < m_impulseIterations; ++i) {
-        resolve_all_collisions(m_bodies);
+    AABB worldBounds{400.0f, 300.0f, 400.0f, 300.0f};
+    QuadTree tree(worldBounds);
+
+    // insert all bodies to the tree
+    for (auto& body : m_bodies) {
+        tree.insert(Point{ body->getPositionX(), body->getPositionY(), body.get()});
+    }
+
+    for (int iter = 0; iter < m_impulseIterations; ++iter) {
+        for (auto& body : m_bodies) {
+            float searchRadius = 100.0f;
+            AABB searchRange{ body->getPositionX(), body->getPositionY(), searchRadius, searchRadius };
+
+            std::vector<Point> nearbyPoints;
+            tree.query(searchRange, nearbyPoints); // push all nearby bodies to nearbyPoints
+
+            for (auto& point : nearbyPoints) {
+                // Compare the memory address of the current body to a nearby one.
+                // This ensures the pair is resolved once only (A + B only, not B + A)
+                // to prevent redundancies
+                if (body.get() > point.body) {
+                    Collision::ResolvePair(*body, *point.body);
+                }
+            }
+        }
     }
 
     for (auto& body : m_bodies) {
