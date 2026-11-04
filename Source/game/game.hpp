@@ -5,5 +5,7 @@
 
 class Game {
 private:
+    PhysicsWorld world;
+    QuadTree qt;
     
 };

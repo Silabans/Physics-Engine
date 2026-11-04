@@ -1,5 +1,6 @@
 #pragma once
 #include "PhysicsWorld.hpp"
+#include "rigidbody.hpp"
 #include <raylib.h>
 
 
