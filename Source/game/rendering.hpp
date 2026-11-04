@@ -46,7 +46,7 @@ void render(std::vector<std::unique_ptr<RigidBody>>& bodies) {
                 );
             }
         }
-        slingshot.
+        slingshot.Draw()
         DrawFPS(10, 10);
 
     EndDrawing();

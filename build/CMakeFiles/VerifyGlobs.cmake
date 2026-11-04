@@ -8,6 +8,7 @@ set(OLD_GLOB
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/PhysicsWorld.cpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/QuadTree.cpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/Slingshot.cpp"
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/game.cpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/main.cpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/main.cpp"
   )
@@ -66,7 +67,9 @@ set(OLD_GLOB
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/Vector2D.hpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/rigidbody.hpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/engine/tools.hpp"
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/GameObject.hpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/Slingshot.hpp"
+  "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/game.hpp"
   "C:/Users/USER/Documents/Coding Projects/Self-initiated/C++/Physics_Simulation/Source/game/rendering.hpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

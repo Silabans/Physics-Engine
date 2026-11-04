@@ -329,6 +329,30 @@ Source/game/Slingshot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/Slingshot.cpp.s
 .PHONY : Source/game/Slingshot.cpp.s
 
+Source/game/game.obj: Source/game/game.cpp.obj
+.PHONY : Source/game/game.obj
+
+# target to build an object file
+Source/game/game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/game.cpp.obj
+.PHONY : Source/game/game.cpp.obj
+
+Source/game/game.i: Source/game/game.cpp.i
+.PHONY : Source/game/game.i
+
+# target to preprocess a source file
+Source/game/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/game.cpp.i
+.PHONY : Source/game/game.cpp.i
+
+Source/game/game.s: Source/game/game.cpp.s
+.PHONY : Source/game/game.s
+
+# target to generate assembly for a file
+Source/game/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Physics_Simulation.dir\build.make CMakeFiles/Physics_Simulation.dir/Source/game/game.cpp.s
+.PHONY : Source/game/game.cpp.s
+
 Source/game/main.obj: Source/game/main.cpp.obj
 .PHONY : Source/game/main.obj
 
@@ -407,6 +431,9 @@ help:
 	@echo ... Source/game/Slingshot.obj
 	@echo ... Source/game/Slingshot.i
 	@echo ... Source/game/Slingshot.s
+	@echo ... Source/game/game.obj
+	@echo ... Source/game/game.i
+	@echo ... Source/game/game.s
 	@echo ... Source/game/main.obj
 	@echo ... Source/game/main.i
 	@echo ... Source/game/main.s

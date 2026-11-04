@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Physics_Simulation.dir/Source/engine/QuadTree.cpp.obj.d"
   "CMakeFiles/Physics_Simulation.dir/Source/game/Slingshot.cpp.obj"
   "CMakeFiles/Physics_Simulation.dir/Source/game/Slingshot.cpp.obj.d"
+  "CMakeFiles/Physics_Simulation.dir/Source/game/game.cpp.obj"
+  "CMakeFiles/Physics_Simulation.dir/Source/game/game.cpp.obj.d"
   "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj"
   "CMakeFiles/Physics_Simulation.dir/Source/game/main.cpp.obj.d"
   "CMakeFiles/Physics_Simulation.dir/Source/main.cpp.obj"
