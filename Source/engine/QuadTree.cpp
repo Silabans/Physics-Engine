@@ -3,6 +3,8 @@
 
 QuadTree::QuadTree(AABB boundary) : boundary(boundary) {};
 
+// Insert the point inside a box to its most appropriate child 
+// (where the point lies)
 bool QuadTree::insertToChildren(const Point& p) {
     if (nw->insert(p)) return true;
     if (ne->insert(p)) return true;
@@ -11,6 +13,9 @@ bool QuadTree::insertToChildren(const Point& p) {
     return false;
 }
 
+// Divides the current box (the parent) into 4 quadrants (its children),
+// then allocates the points that the parent contains into its children
+// by calling QuadTree::insertToChildren
 void QuadTree::subdivide() {
     // Centre coordinates of the parent
     float x = boundary.x;
@@ -38,6 +43,8 @@ void QuadTree::subdivide() {
     points.clear(); // the parent no longer holds the points (delegated to its children)
 }
 
+// Insert a point into the current box if its capacity has not been exceeded.
+// Otherwise, the point will be inserted to one of the box's children
 bool QuadTree::insert(const Point& point) {
     if (!boundary.contains(point)) {
         return false;
@@ -58,6 +65,8 @@ bool QuadTree::insert(const Point& point) {
     return insertToChildren(point);
 }
 
+// Locate and determine where a point lies (which box), 
+// then push the point into a 'found' vector
 void QuadTree::query(const AABB& range, std::vector<Point>& found) const {
     if (!boundary.intersects(range)) return;
 

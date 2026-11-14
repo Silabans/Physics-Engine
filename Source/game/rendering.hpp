@@ -13,8 +13,8 @@ std::mt19937& random_engine() {
     return gen;
 }
 
-
-void render(std::vector<std::unique_ptr<RigidBody>>& bodies) {
+// Renders all present bodies
+void render(std::vector<std::unique_ptr<RigidBody>>& bodies, Slingshot slingshot) {
     BeginDrawing();
         // ClearBackground(BLACK);
         DrawRectangle(0, 0, 800, 600, Fade(BLACK, 0.75f)); // faded trails
@@ -46,7 +46,7 @@ void render(std::vector<std::unique_ptr<RigidBody>>& bodies) {
                 );
             }
         }
-        slingshot.Draw()
+        slingshot.Draw();
         DrawFPS(10, 10);
 
     EndDrawing();

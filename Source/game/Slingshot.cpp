@@ -2,6 +2,7 @@
 #include <cmath>
 
 
+// Slingshot attribute initialization
 Slingshot::Slingshot(Vector2D anchor_pos, float max_radius, float force_scalar)
     : anchor(anchor_pos),
     startRadius(30.0f),
@@ -14,6 +15,7 @@ Slingshot::Slingshot(Vector2D anchor_pos, float max_radius, float force_scalar)
     cooldownTimer(0.0f) {}
 
 
+//  Update the state machine of the slingshot
 void Slingshot::Update(PhysicsWorld& world, float dt) {
     Vector2 rayMouse = GetMousePosition();
     Vector2D mousePos { rayMouse.x, rayMouse.y };
@@ -88,8 +90,8 @@ void Slingshot::Update(PhysicsWorld& world, float dt) {
 }
 
 
+// Draw the slingshot's base and band, alongside the preview of the bird
 void Slingshot::Draw() {
-    
     if (state == SlingshotState::DRAGGING || state == SlingshotState::IDLE) {
         // Draw Back Elastic Band
         DrawLineEx({ anchor.x - 10.0f, anchor.y }, { birdPos.x, birdPos.y }, 5.0f, BEIGE);

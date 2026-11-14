@@ -13,11 +13,13 @@ struct AABB {
     float x, y; // Centre
     float hw, hh; // half-width and half-height (from the centre)
 
+    // Check if a point is within a bounded box
     bool contains(const Point& p) const {
         return (p.x >= x - hw && p.x <= x + hw
         && p.y >= y - hh && p.y <= y + hh);
     }
 
+    // Check if another box intersects the current box
     bool intersects(const AABB& other) const {
         return !(other.x - other.hw > x + hw ||
                 other.x + other.hw < x - hw ||
@@ -55,5 +57,6 @@ public:
 
     bool insert(const Point& point);
 
+    #
     void query(const AABB& range, std::vector<Point>& found) const;
 };

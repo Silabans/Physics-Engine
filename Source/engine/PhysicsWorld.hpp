@@ -3,6 +3,7 @@
 #include <vector>
 #include <memory>
 
+// A class that handles all physics interactions (impulse collisions, etc)
 class PhysicsWorld {
 private:
     // inside logic

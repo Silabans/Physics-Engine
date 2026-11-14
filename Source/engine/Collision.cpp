@@ -14,6 +14,7 @@ Vector2D Collision::CalculateVrel(const RigidBody& a, const RigidBody& b) {
     return va - vb;
 }
 
+
 void Collision::ResolveCircleCollision(RigidBody& a, RigidBody& b) {
     const Circle* circleA = static_cast<const Circle*>(a.getShape());
     const Circle* circleB = static_cast<const Circle*>(b.getShape());
